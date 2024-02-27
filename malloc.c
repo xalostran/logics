@@ -8,7 +8,7 @@ int *initializeArrayWithInput2(int *myArr, int inputSize)
     // printf("Ange storleken på arrayen: ");
     // scanf("%d", &inputSize);
 
-    printf("Ange första värdet: ");
+    printf("Type first value: ");
     scanf("%d", &firstNum);
 
     int *arrayPointer = myArr;
@@ -21,7 +21,7 @@ int *initializeArrayWithInput2(int *myArr, int inputSize)
     arrayPointer = myArr;
     for (int i = 0; i < inputSize; i++)
     {
-        printf("Värde: %d Adress: %p\n", *arrayPointer, arrayPointer);
+        printf("Value: %d Adress: %p\n", *arrayPointer, arrayPointer);
         arrayPointer++;
     }
     return myArr;
@@ -45,7 +45,7 @@ int *performOperations2(int *myArr, int inputSize)
     arrayPointer = myArr;
     for (int i = 0; i < inputSize; i++)
     {
-        printf("Värde: %d Adress: %p\n", *arrayPointer, arrayPointer);
+        printf("Value: %d Adress: %p\n", *arrayPointer, arrayPointer);
         arrayPointer += 2;
     }
     return myArr;
@@ -54,7 +54,7 @@ int *performOperations2(int *myArr, int inputSize)
 int main(void)
 {
     int inputSize;
-    printf("Ange storlek på arrayen: ");
+    printf("Type size of array: ");
     scanf("%d", &inputSize);
 
     int *myArr = (int *)malloc(inputSize * sizeof(int));
